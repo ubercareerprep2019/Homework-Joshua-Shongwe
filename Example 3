@@ -1,0 +1,12 @@
+//File Comment: Example 3 Print Number of Levels. The following code will print the number of total levels in the given tree.
+
+void printNumLevels(TreeNode* root){
+  if(root == nullptr){
+    cout << "0" << endl;
+  }
+  //Not sure if the levels will store the correct value due to the recursion here. 
+  int levels = 1 + max(printNumLevels(root->left), printNumLevels(root->right);
+  
+  cout << levels << endl;
+}
+  
