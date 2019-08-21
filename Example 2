@@ -1,0 +1,29 @@
+/** File Comment: Example 2 Printing Level by Level. The following code will take a reference to a TreeNode root and print the
+* data of each node in the corresponding level, then traverse until the proceeding level until the tree has been fully 
+* traversed through.
+*/
+
+void printLevelByLevel(TreeNode* root){ 
+  if(root != nullptr){
+    Queue<TreeNode*> level;
+    level.enqueue(root);
+    
+    while(!level.empty()){
+      int reporters = level.size();
+      while(level.size() != 0){
+        TreeNode* temp = level.dequeue();
+        cout << "Name: " << temp->name << ", " << "Title: " << temp->title << endl;
+        
+        if(temp->left != nullptr){
+          level.enqueue(temp->left);
+          }
+        if(temp->right != nullptr){
+          level.enqueue(temp->right);
+          }
+      reporters--;
+      }
+    cout << endl;
+    }
+   }
+   return;
+ }
