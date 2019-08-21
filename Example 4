@@ -1,0 +1,44 @@
+//File Comment:Example 4 Implement the methods find() and insert() for a simple binary search tree.
+
+
+public void insert(int key){
+  root = new Node();
+  insertHelper(root, key);
+}
+
+public void insertHelper(Node* root, int key){
+  if(root != nullptr){
+    
+    if(key > node->key){
+      node->right = insertHelper(node->right, key);
+    }
+    if(key < node->key){
+      node->left = insertHelper(node->left, key);
+    }
+  }
+  return;
+}
+
+public boolean find(int key){
+  root = new Node();
+  return findHelper(root, key);
+}
+
+public boolean findHelper(Node* root, int key){
+  Node* temp = new Node();
+  temp = root;
+  
+  while(temp != nullptr){
+    if(temp->key == key){
+      return true;
+     }
+     if(temp->key < key){
+      temp = temp->right;
+     }
+     if(temp->key > key){
+      temp = temp->left;
+     }
+  }
+  return false;
+}
+    
