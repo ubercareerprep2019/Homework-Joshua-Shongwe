@@ -1,0 +1,14 @@
+//File Comment: Example 1 BST Print. The following code executes an in-order traversal through a Binary Search Tree.
+
+void print(TreeNode* root){
+  if(root != nullptr){
+    if(root->left){
+      print(root->left);
+      }
+    cout << root-> data << endl;
+    if(root->right){
+      print(root->right);
+      }
+    }
+ return;
+}
