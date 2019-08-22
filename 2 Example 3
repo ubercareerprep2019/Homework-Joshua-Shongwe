@@ -1,1 +1,13 @@
+void psuedoCode(node v){
+//Psuedo code
+bfs-from(node v)
+  make a queue of nodes, initially seeded with a v
+    while the queue isn't empty
+      dequeue a node curr. 
+      process the node curr.
+      
+   for each node adjacent to curr.
+    if that node has never been enqueued:
+      enqueue that node.
+ }
 
