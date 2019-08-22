@@ -1,0 +1,4 @@
+/**I'm not well-versed on how to read through a data.csv file or implement the BST phonebook. But what I do know is that
+* the time complexity of a binary search is O(log N) where as the time complexity of a search for an unsorted array boils down 
+* to roughly O(N log N). Therefore the overall time to search through a BST would be significantly more efficient as 
+* opposed to the overall time compelxity for a search of an unsorted array.
