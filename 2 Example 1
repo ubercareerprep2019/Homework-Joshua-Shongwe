@@ -1,2 +1,40 @@
 //File Comment: Exercise 1: Implement a graph using an adjacency list.
 
+public static class GraphNode {
+  public int data;
+  GraphNode(int data){
+    this.data = data;
+   }
+ }
+ 
+ class GraphWithAdjacencyList {
+  private Map<GraphNode, List<GraphNode>> adjNodes;
+  }
+  
+  GraphWithAdjacencyList::void addNode(int key){
+    GraphNode* graphNode = new GraphNode();
+    graphNode->data = key;
+    graphNode->next = nullptr;
+  }
+  
+  GraphWithAdjacencyList::void addedge(int node1, int node2){
+    GraphNode* graphNode = new GraphNode(node2);
+    graphNode->next = list[node1];
+    list[node1] = graphNode;
+    graphNode = GraphNode(node1);
+    graphNode->next = list[node2];
+    list[node2] = GraphNode;
+   }
+   //Pretty confused on the remove operatations.
+   GraphWithAdjacencyList::void removeEdge(int node1, int node2){
+    list[node1].erase(node2);
+    list[node2].erase(node1);
+    }
+    
+    GraphWithAdjacencyList::void removeNode(int key){
+     //Check if the front node matches the key
+      //If it does set it's next to be the head, delete the first element, and free the memory.
+        //If it does not iterate through the list (while != null) and check each node to see if it matches
+           //If it matches set the temp to the temp->next, free the memory and return
+      }
+    
