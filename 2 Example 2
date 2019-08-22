@@ -1,0 +1,40 @@
+void DFS(int key){
+  bool checked[key] = false;
+  Vector<point<int, int> > pathUsed;
+  for(int i = 0; i < key; i++){
+    visited[i] = false;
+   }
+   
+   DFSHelper(0, key, checked, pathUsed, -1, 0);
+}
+
+void DFSHelper(int final, int key, bool checked[], Vector<point<int, int>> pathUsed, int parent, int child){
+  int curr = 0;
+  
+  for(int i = 0; i < key; i++){
+    if(checked[i]){
+      curr++;
+     }
+   }  
+   if( curr == key){
+      return;
+   }
+   checked[final] = true;
+   pathTaken.add(parent, final);
+   
+   cout << final << " ";
+   
+   //Here is where I don't know how to access the next key in the order. Is there an array I'm not aware of?
+   
+   //Loop through each of the the choices (for each loop probably)
+      //Determine whether it has been visited
+        //Recursive call
+   
+   //BackTrack to step out of a call that leads nowhere.
+   
+   .
+   .
+   .
+     
+  }
+ 
