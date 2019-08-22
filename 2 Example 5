@@ -1,1 +1,15 @@
+//Brute Force method, probably not the most efficient.
 
+int nbOfIslands(bool[][] islandMap){
+  int num = 0;
+  for(int i = 0; i<islandMap.row().size(); i++){
+    for(int j = 0; j<islandMap.col().size(); j++){
+      if(mat[i][j] == true){
+        if((j == false || islandMap[i][j-1] == false) && i == false || islandMap[i-1][j] = false)){
+          count++
+          }
+        }
+      }
+    }
+    return count;
+ }
