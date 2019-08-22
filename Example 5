@@ -1,0 +1,54 @@
+//File Comment: Example 5 Implementing a Phone book. 
+
+//Not sure if I am intented to make a Contact class here.
+//Assuming a contact class constitutes of both a name and a contact
+
+class Contact{
+  string name;
+  string phoneNumber;
+  
+  public: 
+  Contact();
+  Contact(string, string);
+  Contact(const Contact&);
+}
+
+ArrayList::ArrayList<Contact> ListPhoneBook{
+ int size = 0;
+
+}
+
+public interface ListPhoneBook{
+
+  ArrayList <Contact> contacts = new ArrayList();
+    size;
+    
+  public int size(){
+    return size;
+  }
+  
+  //Not too sure what a long converts to in C++. Some websites say int, other's say an object and a string is an object.
+  
+  public void insert(string name, string phoneNumber){
+    if(contacts.size() == 0){
+    contacts.add(Contact(name, phoneNumber));
+    size++;
+  }
+  
+  public int find(String name){
+    if(size == 0){
+      return -1;
+    }
+    for(int i = 0; i < size; i++){
+      if(contacts.first()[i] == name){
+        return contacts[i];
+      }
+    }
+ }
+ 
+ //Not too sure how to implement the BinarySearchTreePhoneBook
+  
+    
+  
+    
+  
