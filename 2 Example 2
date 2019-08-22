@@ -37,4 +37,23 @@ void DFSHelper(int final, int key, bool checked[], Vector<point<int, int>> pathU
    .
      
   }
+  
+ /**Comment: Recursive DFS. Notes from my Stanford Experience
+* dfs-from(node v){
+*  if this is first time we've called dfs-from(v);
+*  process node v
+* for each node adj to v:
+*   call dfs-from (x) on that node
+* }
+*
+* dfs-from(node v){
+* make a stack of nodes; initially seeded with a v.
+*   while the stack isn't empty;
+*     pop a node curr.
+*     process the node curr.
+*  for each node adj. to curr.
+*     if that node has never been pushed:
+*       push that node.
+* }
+  
  
