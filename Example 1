@@ -1,5 +1,9 @@
 //File Comment: Example 1 BST Print. The following code executes an in-order traversal through a Binary Search Tree.
 
+/** Note: The algorithim will traverse/print through the entirety of the BST, but the (post/pre/in) order is determined
+* by the order of the calls.
+*/
+
 void print(TreeNode* root){
   if(root != nullptr){
     if(root->left){
